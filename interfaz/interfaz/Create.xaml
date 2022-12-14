@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="interfaz.Create">
+  <!--Pages can be added as references or inline-->
+    <ContentPage Title="Create Entry" >
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Create entry" HorizontalTextAlignment="Start" TextColor="White" FontSize="32" />
+                    <Image Source="logoipsum265Dark.png" HorizontalOptions="EndAndExpand"></Image>
+
+                </StackLayout>
+
+                <DatePicker MinimumDate="01/01/2018"
+                    MaximumDate="12/31/2018"
+                    Date="06/21/2018" BackgroundColor="#2b2a33"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" 
+                        Text="Name"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="1" Grid.Column="0"
+                        Text="Code"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="2" Grid.Column="0"
+                        Text="Description"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="3" Grid.Column="0"
+                        Text="Unit type"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="2" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="3" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                </Grid>
+                <Grid Grid.Row="4" Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="2*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0"
+                        Text="Quantity"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="1" Grid.Column="0"
+                        Text="Order N°"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Button Grid.Row="2" Grid.ColumnSpan="2"
+                        class="btnCreate"
+                        Text="Create"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                            Margin="10,10" HeightRequest="90"/>
+                </Grid>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0"
+                        class="btnReturn"
+                        Text="Return"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+                    <Button Grid.Row="0" Grid.Column="1"
+                        class="btnHelp"
+                        Text="Help"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Create Exit" >
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Create exit" HorizontalTextAlignment="Start" TextColor="White" FontSize="32" />
+                    <Image Source="logoipsum265Dark.png" HorizontalOptions="EndAndExpand"></Image>
+
+                </StackLayout>
+
+                <DatePicker MinimumDate="01/01/2018"
+                    MaximumDate="12/31/2018"
+                    Date="06/21/2018" BackgroundColor="#2b2a33"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="2*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Row="0" Grid.Column="0" 
+                        Text="Name"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="1" Grid.Column="0"
+                        Text="Code"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="2" Grid.Column="0"
+                        Text="Description"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="3" Grid.Column="0"
+                        Text="Unit type"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="2" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                    <Entry Grid.Row="3" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                </Grid>
+                <Grid Grid.Row="4" Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="2*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0"
+                        Text="Quantity"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Label Grid.Row="1" Grid.Column="0"
+                        Text="Order N°"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                    <Button Grid.Row="2" Grid.ColumnSpan="2" BackgroundColor="#662299"
+                        class="btnCreate"
+                        Text="Create"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                            Margin="10,10" HeightRequest="90"/>
+                </Grid>
+                <StackLayout Orientation="Horizontal">
+                </StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0"
+                        class="btnReturn"
+                        Text="Return"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+                    <Button Grid.Row="0" Grid.Column="1"
+                        class="btnHelp"
+                        Text="Help"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+
+                </Grid>
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage>
+</TabbedPage>

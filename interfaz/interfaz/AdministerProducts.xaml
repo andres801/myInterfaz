@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="interfaz.AdministerProducts">
+  <!--Pages can be added as references or inline-->
+
+    <ContentPage Title="Read">
+        <StackLayout>
+            
+            <StackLayout Orientation="Horizontal" >
+                
+                <Button Grid.Row="0" Grid.Column="1"
+                        class="btnHelp"
+                        Text="Help"
+                        HorizontalOptions="End"
+                        VerticalOptions="End" 
+                        Margin="10,10"/>
+                <Image Source="logoipsum265Dark.png" HorizontalOptions="EndAndExpand" Margin="0,5,5,20"></Image>
+            </StackLayout>
+            
+            <Label Text="Read Products" HorizontalTextAlignment="Start" TextColor="White" FontSize="32" />
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
+                    <Label Text="Search by" />
+                    <RadioButton Content="Name" IsChecked="true"  />
+                    <RadioButton Content="Description" />
+                    <RadioButton Content="Stock" />
+                    <RadioButton Content="Price"/>
+                </StackLayout>
+                <Entry HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#2b2a33" Margin="0,20,0,20"></Entry>
+                
+            </StackLayout>
+            
+            <Button class="btnSearch"
+                        Text="Search"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Fill" HeightRequest="70" 
+                        Margin="10,10,10,10"/>
+            <Grid VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.1*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="1.5*" />
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" BackgroundColor="#035b43" FontSize="Medium"
+                        Text="Name"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="0" Grid.Column="1" BackgroundColor="#035b43" FontSize="Medium"
+                        Text="Description"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="0" Grid.Column="2" BackgroundColor="#035b43" FontSize="Medium"
+                        Text="Stock"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="0" Grid.Column="3" BackgroundColor="#035b43" FontSize="Medium"
+                        Text="Unit Type"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="1" Grid.Column="0" FontSize="Body"
+                        Text="Manzana"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="1" Grid.Column="1" FontSize="Body"
+                        Text="Golden"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="1" Grid.Column="2" FontSize="Body"
+                        Text="400"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="1" Grid.Column="3" FontSize="Body"
+                        Text="Kilogram"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="2" Grid.Column="0" FontSize="Body"
+                        Text="Limón"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="2" Grid.Column="1" FontSize="Body"
+                        Text="Colima"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="2" Grid.Column="2" FontSize="Body"
+                        Text="200"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="2" Grid.Column="3" FontSize="Body"
+                        Text="Kilogram"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="3" Grid.Column="0" FontSize="Body"
+                        Text="Martillo"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="3" Grid.Column="1" FontSize="Body"
+                        Text="Truper"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="3" Grid.Column="2" FontSize="Body"
+                        Text="50"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="3" Grid.Column="3" FontSize="Body"
+                        Text="Units"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="4" Grid.Column="0" FontSize="Body"
+                        Text="Martillo"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="4" Grid.Column="1" FontSize="Body"
+                        Text="Black and Decker"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="4" Grid.Column="2" FontSize="Body"
+                        Text="50"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="4" Grid.Column="3" FontSize="Body"
+                        Text="Units"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="5" Grid.Column="0" FontSize="Body"
+                        Text="Aguacate"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="5" Grid.Column="1" FontSize="Body"
+                        Text="Hass"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="5" Grid.Column="2" FontSize="Body"
+                        Text="150"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Label Grid.Row="5" Grid.Column="3" FontSize="Body"
+                        Text="Kilograms"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+            </Grid>
+
+
+
+        </StackLayout>
+
+    </ContentPage>
+
+    <ContentPage Title="Add" >
+        <StackLayout>
+            <Image Source="logoipsum265Dark.png" HorizontalOptions="End" Margin="0,5,5,20"></Image>
+            <StackLayout Orientation="Horizontal" >
+                <Button Grid.Row="0" Grid.Column="1"
+                        class="btnHelp"
+                        Text="Help"
+                        HorizontalOptions="End"
+                        VerticalOptions="End" 
+                        Margin="10,10"/>
+                <Image Source="ball200.png" Margin="0,5,5,5"></Image>
+            </StackLayout>
+            <Label Text="Add Product" HorizontalTextAlignment="Start" TextColor="White" FontSize="32" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" 
+                        Text="Name"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="1" Grid.Column="0"
+                        Text="Code"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="2" Grid.Column="0"
+                        Text="Description"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="3" Grid.Column="0"
+                        Text="Unit type"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="2" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="3" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Button Grid.Row="4" Grid.Column="0"
+                        class="btnReturn"
+                        Text="Return"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+                <Button Grid.Row="4" Grid.Column="1"
+                        class="btnCreate"
+                        Text="Submit"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+            </Grid>
+
+
+
+
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Update" >
+        <StackLayout>
+            <Image Source="logoipsum265Dark.png" HorizontalOptions="End" Margin="0,5,5,20"></Image>
+            <StackLayout Orientation="Horizontal" >
+                <Button Grid.Row="0" Grid.Column="1"
+                        class="btnHelp"
+                        Text="Help"
+                        HorizontalOptions="End"
+                        VerticalOptions="End" 
+                        Margin="10,10"/>
+                <Image Source="ball200.png" Margin="0,5,5,5"></Image>
+            </StackLayout>
+            <Label Text="Update Product" HorizontalTextAlignment="Start" TextColor="White" FontSize="32" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" 
+                        Text="Name"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="1" Grid.Column="0"
+                        Text="Code"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="2" Grid.Column="0"
+                        Text="Description"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="3" Grid.Column="0"
+                        Text="Unit type"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="2" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="3" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Button Grid.Row="4" Grid.Column="0"
+                        class="btnReturn"
+                        Text="Return"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"  />
+                <Button Grid.Row="4" Grid.Column="1"
+                        class="btnUpdate"
+                        Text="Submit"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Delete" >
+        <StackLayout>
+            <Image Source="logoipsum265Dark.png" HorizontalOptions="End" Margin="0,5,5,20"></Image>
+            <StackLayout Orientation="Horizontal" >
+                <Button Grid.Row="0" Grid.Column="1"
+                        class="btnHelp"
+                        Text="Help"
+                        HorizontalOptions="End"
+                        VerticalOptions="End" 
+                        Margin="10,10"/>
+                <Image Source="ball200.png" Margin="0,5,5,5"></Image>
+            </StackLayout>
+            <Label Text="Delete Product" HorizontalTextAlignment="Start" TextColor="White" FontSize="32" />
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" 
+                        Text="Name"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="1" Grid.Column="0"
+                        Text="Code"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="2" Grid.Column="0"
+                        Text="Description"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Label Grid.Row="3" Grid.Column="0"
+                        Text="Unit type"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" />
+                <Entry Grid.Row="0" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="1" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="2" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Entry Grid.Row="3" Grid.Column="1"
+                        Text=""
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="Center" />
+                <Button Grid.Row="4" Grid.Column="0"
+                        class="btnReturn"
+                        Text="Return"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"  />
+                <Button Grid.Row="4" Grid.Column="1"
+                        class="btnDelete"
+                        Text="Submit"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand" 
+                        Margin="1,1"/>
+            </Grid>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                
+            </Grid>
+
+
+
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

@@ -1,0 +1,33 @@
+
+^Label {
+    font-size: medium;
+    border: solid;
+}
+
+^Entry {
+    background-color: #2b2a33;
+    font-size: medium;
+    border: solid;
+}
+
+.btnCreate {
+    background-color: forestgreen;
+}
+
+.btnReturn {
+    background-color: slategray;
+}
+
+.btnHelp {
+    background-color: dodgerblue;
+}
+
+.btnSearch {
+    background-color: cadetblue;
+}
+.btnUpdate {
+    background-color: #663399;
+}
+.btnDelete{
+    background-color: firebrick;
+}
